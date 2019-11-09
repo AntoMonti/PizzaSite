@@ -1,1 +1,4 @@
-f
+function something()
+	{
+		alert('Hello!');
+	}
