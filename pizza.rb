@@ -11,7 +11,7 @@ end
 
 get '/' do
 	@products = Product.all
-	erb :index
+	erb :index1
 end 
 
 get '/about' do
