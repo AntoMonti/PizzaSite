@@ -50,32 +50,31 @@
       </div>
     </div>
   </nav>
+<div class="container">
 
-<div class="row">
-	<% @products.each do |p| %>
-	<div class="col-md-3">
-	<div>	
-		<%= p.title %>
-	</div>
-	<div>	
-		<img src="<%= p.path_to_image %>">
-	</div>
-	<div>	
-		<%= p.description %>
-	</div>
-	<div>	
-		<%= p.price %> $
-	</div>
-	<div>	
-		<%= p.size %> mm
-	</div>
-	<button type="button" class="btn btn-success" onclick="add_to_card(<%= p.id %>)">Add to card</button>
-	<% end %>
-
-</div>
-</div>
-
-
+          <div class="row">
+          	<% @products.each do |p| %>
+          	<div class="col-md-3">
+          	<div>	
+          		<%= p.title %>
+          	</div>
+          	<div>	
+          		<img src="<%= p.path_to_image %>">
+          	</div>
+          	<div>	
+          		<%= p.description %>
+          	</div>
+          	<div>	
+          		<%= p.price %> $
+          	</div>
+          	<div>	
+          		<%= p.size %> mm
+          	</div>
+          	<button type="button" class="btn btn-success" onclick="add_to_card(<%= p.id %>)">Add to card</button>
+          	<% end %>
+            </div>
+        </div>
+      </div>
 
   <!-- Bootstrap core JavaScript -->
   <script src="/vendor/jquery/jquery.min.js"></script>
