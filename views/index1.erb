@@ -49,7 +49,7 @@
           <li class="nav-item">
             <form action="/cart" method="POST"> 
             <input id="orders_input" type="hidden" name="order">
-            <input type="submit" class="btn btn-primary btn-lg" value="Cart">
+            <input id="orders_button" type="submit" class="btn btn-primary btn-lg" value="Cart">
             </form>
           </li>
         </ul>
@@ -88,6 +88,7 @@
   <script type="text/javascript">
     $(function() {
       update_orders_input();
+      update_orders_button();
     })
   </script>
 
