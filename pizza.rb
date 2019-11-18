@@ -25,3 +25,7 @@ end
 post '/cart' do
 	erb :cart
 end
+
+post '/form' do
+	erb 'thank you'
+end
