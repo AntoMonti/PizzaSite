@@ -57,7 +57,38 @@
     </div>
   </nav>
 <div class="container">
-<%= @orders.inspect %>
+
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Price</th>
+			<th>Quantity</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% total_price = 0 %>
+		<% total_qty = 0 %>
+
+		<% @items.each do |item| %>
+		<tr>
+			<th><%= item[0].title %></th>
+			<th><%= item[0].price %></th>
+			<th><%= item[1] %></th>
+		</tr>
+		<% total_price += item[0].price %>
+		<% total_qty += item[1].to_i %>
+		<% end %>
+
+		<tr>
+			<th></th>
+			<th><%= total_price %></th>
+			<th><%= total_qty %></th>
+		</tr>
+
+	</tbody>
+</table>
+</table>
 
 </div>
 
