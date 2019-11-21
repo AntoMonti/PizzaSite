@@ -76,7 +76,7 @@
 			<th><%= item[0].price %></th>
 			<th><%= item[1] %></th>
 		</tr>
-		<% total_price += item[0].price %>
+		<% total_price += item[0].price * item[1].to_i %>
 		<% total_qty += item[1].to_i %>
 		<% end %>
 
