@@ -64,5 +64,5 @@ end
 
 
 post '/form' do
-	erb 'thank you'
+	erb :thanks_contact_form
 end
